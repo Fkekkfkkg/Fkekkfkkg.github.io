@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Inventario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Inventario</h1>
+  
+  <form id="add-form">
+    <input type="text" id="name-input" placeholder="Nombre del producto" required>
+    <input type="number" id="quantity-input" placeholder="Cantidad" required>
+    <button type="submit">Agregar</button>
+  </form>
+  
+  <table id="inventory-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody id="inventory-body"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
